@@ -1,6 +1,7 @@
 package com.dnommurd.projetobancario
 
-class MenuItemModel {
-    val titulo: String
+class MenuItemModel(tituloo: Any?) {
+    val tituloo:String
+
 
 }

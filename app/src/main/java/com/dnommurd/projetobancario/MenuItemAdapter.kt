@@ -35,7 +35,7 @@ class MenuItemAdapter : RecyclerView.Adapter<MenuItemAdapter.MenuItemAdapterView
             itemView.findViewById<TextView>(R.id.tv_title)
         }
         fun iniciaViews(item: MenuItemModel){
-            tvTitle.text = item.titulo
+            tvTitle.text = item.tituloo
 
         }
     }

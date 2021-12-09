@@ -19,41 +19,37 @@ class MainActivity : AppCompatActivity() {
     private fun iniciaViews() {
         rvList = findViewById(R.id.rv_list)
         rvList.adapter = adapter
-        rvList.layoutManager = GridLayoutManager(this, 2)
+        rvList.layoutManager = GridLayoutManager(this, 3)
     }
 
     private fun setItemsLista() {
         adapter.setItemsList(
             arrayListOf(
                 MenuItemModel(
-                    "cartões"
+                    tituloo: "cartão"
+                ),
+
+                MenuItemModel(
+                    tituloo: "meus comprovantes"
                 ),
                 MenuItemModel(
-                    "meus comprovantes"
+                    tituloo: "portabilidade de salários"
                 ),
                 MenuItemModel(
-                    "portabilidade de salários"
+                    tituloo: "investimentos"
                 ),
                 MenuItemModel(
-                    "investimentos"
+                    tituloo: "cartões"
                 ),
                 MenuItemModel(
-                    "cartões"
+                    tituloo: "meus comprovantes"
                 ),
                 MenuItemModel(
-                    "meus comprovantes"
+                    tituloo: "portabilidade de salários"
                 ),
                 MenuItemModel(
-                    "portabilidade de salários"
-                ),
-                MenuItemModel(
-                    "investimentos"
-                ),
+                    tituloo: "investimentos"
+                )
             )
-
-
-
-
-
     }
 }
