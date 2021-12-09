@@ -3,6 +3,7 @@ package com.dnommurd.projetobancario
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class MenuItemAdapter : RecyclerView.Adapter<MenuItemAdapter.MenuItemAdapterViewHolder>() {
@@ -29,8 +30,15 @@ class MenuItemAdapter : RecyclerView.Adapter<MenuItemAdapter.MenuItemAdapterView
         this.list.addAll(list)
     }
 
-    class MenuItemAdapterViewHolder(val itemView: View) : RecyclerView.ViewHolder{
-        fun iniciaViews(item: MenuItemModel)}
+    class MenuItemAdapterViewHolder(itemView: View) : RecyclerView.ViewHolder{
+        private val tvTitle by lazy {
+            itemView.findViewById<TextView>(R.id.tv_title)
+        }
+        fun iniciaViews(item: MenuItemModel){
+            tvTitle.text = item.titulo
+
+        }
+    }
 
 
 }
